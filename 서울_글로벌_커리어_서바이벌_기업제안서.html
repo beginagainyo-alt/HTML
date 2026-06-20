@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서울 글로벌 커리어 서바이벌 2026 - 기업 파트너십 제안서</title>
+    <!-- Google Fonts: Playfair Display (Serif) & Inter (Sans-serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Modern Minimalist Design Tokens (Black & White Theme) */
+        :root {
+            --color-bg: #ffffff;
+            --color-text: #111111;
+            --color-text-muted: #555555;
+            --color-border: #111111;
+            --color-border-light: #e5e5e7;
+            --color-card-bg: #f9f9fb;
+            --font-serif: 'Playfair Display', serif;
+            --font-sans: 'Inter', 'Noto Sans KR', sans-serif;
+            --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        /* Basic Reset & Core Layout */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            letter-spacing: -0.01em;
+            word-break: keep-all;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 80px 40px;
+        }
+
+        /* Typography */
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--color-text);
+        }
+
+        .serif {
+            font-family: var(--font-serif);
+        }
+
+        /* Utilities */
+        .mb-2 {
+            margin-bottom: 8px;
+        }
+
+        .mb-4 {
+            margin-bottom: 16px;
+        }
+
+        .mb-8 {
+            margin-bottom: 32px;
+        }
+
+        .mb-12 {
+            margin-bottom: 48px;
+        }
+
+        .mt-12 {
+            margin-top: 48px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .flex-between {
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .container {
+                padding: 40px 20px;
+            }
+        }
+
+        /* Premium Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 28px;
+            font-family: var(--font-sans);
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            transition: var(--transition);
+            border: 1px solid var(--color-border);
+        }
+
+        .btn-black {
+            background-color: var(--color-text);
+            color: var(--color-bg);
+        }
+
+        .btn-black:hover {
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            transform: translateY(-2px);
+        }
+
+        .btn-white {
+            background-color: var(--color-bg);
+            color: var(--color-text);
+        }
+
+        .btn-white:hover {
+            background-color: var(--color-text);
+            color: var(--color-bg);
+            transform: translateY(-2px);
+        }
+
+        /* Document Header */
+        header {
+            border-bottom: 1px solid var(--color-border);
+            padding-bottom: 48px;
+            margin-bottom: 64px;
+            position: relative;
+        }
+
+        .doc-meta {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--color-text-muted);
+            margin-bottom: 24px;
+        }
+
+        .doc-title-main {
+            font-size: 56px;
+            font-family: var(--font-serif);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .doc-subtitle {
+            font-size: 20px;
+            font-weight: 300;
+            color: var(--color-text-muted);
+            max-width: 650px;
+        }
+
+        .header-actions {
+            margin-top: 32px;
+            display: flex;
+            gap: 16px;
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 80px;
+        }
+
+        .section-num {
+            font-family: var(--font-serif);
+            font-size: 24px;
+            font-style: italic;
+            display: block;
+            margin-bottom: 12px;
+            color: var(--color-text-muted);
+        }
+
+        .section-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--color-border-light);
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+        }
+
+        /* Key Metrics Grid */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            border: 1px solid var(--color-border);
+            padding: 32px;
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .metrics-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+                padding: 20px;
+            }
+        }
+
+        .metric-card {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .metric-val {
+            font-family: var(--font-serif);
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            border-bottom: 1px solid var(--color-border-light);
+            padding-bottom: 8px;
+        }
+
+        .metric-lbl {
+            font-size: 13px;
+            color: var(--color-text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 8px;
+        }
+
+        /* Tabs for Track Selection */
+        .tab-nav {
+            display: flex;
+            border-bottom: 1px solid var(--color-border-light);
+            margin-bottom: 32px;
+        }
+
+        .tab-btn {
+            background: none;
+            border: none;
+            padding: 16px 24px;
+            font-family: var(--font-sans);
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--color-text-muted);
+            cursor: pointer;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .tab-btn:hover {
+            color: var(--color-text);
+        }
+
+        .tab-btn.active {
+            color: var(--color-text);
+            font-weight: 700;
+        }
+
+        .tab-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--color-text);
+        }
+
+        .tab-content {
+            display: none;
+            padding: 24px;
+            border: 1px solid var(--color-border-light);
+            background-color: var(--color-card-bg);
+            animation: fadeIn 0.4s ease;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(5px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Timeline Cards */
+        .timeline-container {
+            position: relative;
+            padding-left: 24px;
+            border-left: 1px solid var(--color-border);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -29px;
+            top: 6px;
+            width: 9px;
+            height: 9px;
+            background-color: var(--color-bg);
+            border: 1px solid var(--color-border);
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+
+        .timeline-item:hover::before {
+            background-color: var(--color-text);
+        }
+
+        .timeline-date {
+            font-family: var(--font-serif);
+            font-size: 14px;
+            font-style: italic;
+            color: var(--color-text-muted);
+            margin-bottom: 4px;
+        }
+
+        .timeline-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        /* Benefits Card Grid */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        @media (max-width: 768px) {
+            .benefits-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+        }
+
+        .benefit-card {
+            border: 1px solid var(--color-border-light);
+            padding: 32px 24px;
+            transition: var(--transition);
+        }
+
+        .benefit-card:hover {
+            border-color: var(--color-border);
+            transform: translateY(-4px);
+        }
+
+        .benefit-num {
+            font-family: var(--font-serif);
+            font-size: 24px;
+            color: var(--color-text-muted);
+            margin-bottom: 16px;
+        }
+
+        .benefit-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .benefit-desc {
+            font-size: 14px;
+            color: var(--color-text-muted);
+            line-height: 1.5;
+        }
+
+        /* Modal Application Form */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .modal-content {
+            background-color: var(--color-bg);
+            border: 1px solid var(--color-border);
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+            position: relative;
+            animation: modalSlideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        @keyframes modalSlideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            font-size: 24px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-family: var(--font-sans);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 8px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--color-border-light);
+            font-family: var(--font-sans);
+            font-size: 14px;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--color-border);
+        }
+
+        .form-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--color-border);
+            padding-top: 48px;
+            margin-top: 120px;
+            font-size: 13px;
+            color: var(--color-text-muted);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        @media (max-width: 768px) {
+            footer {
+                flex-direction: column;
+                gap: 24px;
+            }
+        }
+
+        /* Print styling to match premium corporate PDF guidelines */
+        @media print {
+            body {
+                background: #ffffff;
+                color: #000000;
+            }
+
+            .container {
+                padding: 20px;
+                max-width: 100%;
+            }
+
+            .header-actions,
+            .tab-nav,
+            .btn,
+            .close-btn,
+            footer {
+                display: none !important;
+            }
+
+            .tab-content {
+                display: block !important;
+                border: none;
+                background: none;
+                padding: 0;
+                margin-bottom: 40px;
+                page-break-inside: avoid;
+            }
+
+            .timeline-item,
+            .benefit-card {
+                page-break-inside: avoid;
+            }
+
+            section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Proposal Header -->
+        <header>
+            <div class="doc-meta">Partnership Proposal / 2026 Edition</div>
+            <div class="doc-title-main">Seoul Global<br>Career Survival</div>
+            <div class="doc-subtitle">우수 글로벌 인재와 스타트업·스케일업을 연결하는 국내 유일의 채용 연계 실무 서바이벌 페스티벌</div>
+
+            <div class="header-actions">
+                <button class="btn btn-black" onclick="openModal()">참여 신청하기</button>
+                <button class="btn btn-white" onclick="window.print()">PDF로 내보내기</button>
+            </div>
+        </header>
+
+        <!-- Section 1: Overview -->
+        <section>
+            <span class="section-num">01. Overview</span>
+            <h2 class="section-title">행사 개요</h2>
+            <p class="mb-4">
+                <strong>서울 글로벌 커리어 서바이벌 2026</strong>은 다국어 커뮤니케이션 능력과 직무 역량을 모두 갖춘 상위 글로벌 인재(외국인 유학생 및 구직자)와 글로벌 비즈니스
+                도약을 준비하는 유망 국내 기업을 연결하기 위한 특화 매칭 행사입니다.
+            </p>
+            <p class="mb-8">
+                단순 구인 광고나 일방적인 면접 방식을 탈피하여, 참여 기업이 출제한 <strong>'미니 실무 과제'</strong>를 구직자가 실시간 해결하는 과정을 거쳐 실제 역량을 사전
+                검증합니다.
+            </p>
+
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <span class="metric-val">30</span>
+                    <span class="metric-lbl">검증된 외국인 인재</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-val">50+</span>
+                    <span class="metric-lbl">매칭 희망 기업</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-val">2 Days</span>
+                    <span class="metric-lbl">현장 집중 운영</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-val">100%</span>
+                    <span class="metric-lbl">비자 적합 사전검토</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Program Tracks -->
+        <section>
+            <span class="section-num">02. Engagement Tracks</span>
+            <h2 class="section-title">기업 참여 방식</h2>
+            <p class="mb-8">귀사의 상황에 맞게 최적의 매칭 및 브랜딩을 제공하는 4개의 참여 트랙 중 선택하실 수 있습니다.</p>
+
+            <!-- Interactive Tab Menu -->
+            <div class="tab-nav">
+                <button class="tab-btn active" onclick="switchTab(event, 'track-matching')">01. 채용 매칭</button>
+                <button class="tab-btn" onclick="switchTab(event, 'track-tasks')">02. 실무 과제</button>
+                <button class="tab-btn" onclick="switchTab(event, 'track-mentor')">03. 심사/멘토</button>
+                <button class="tab-btn" onclick="switchTab(event, 'track-branding')">04. 시상/브랜딩</button>
+            </div>
+
+            <!-- Tab Contents -->
+            <div id="track-matching" class="tab-content active">
+                <h3 class="mb-2">Track 01. 채용 매칭 파트너</h3>
+                <p class="mb-4">글로벌 서비스 운영, 마케팅, IT 개발, 해외영업 등 글로벌 시장으로 나아가는 기업을 위한 전문 외국인 인재풀을 연계합니다.</p>
+                <ul>
+                    <li class="mb-2"><strong>인재 매칭</strong>: 선발된 우수 글로벌 인재 30명의 포트폴리오 사전 제공</li>
+                    <li class="mb-2"><strong>일대일 면접</strong>: 행사 2일 차에 현장 단독 인터뷰 부스 제공 및 집중 면접 기회</li>
+                    <li class="mb-2"><strong>비자 서포트</strong>: E-7, F-2, D-10 등 외국인 고용에 필수적인 비자 발급 조건 사전 스크리닝</li>
+                </ul>
+            </div>
+
+            <div id="track-tasks" class="tab-content">
+                <h3 class="mb-2">Track 02. 미니 실무 과제 출제</h3>
+                <p class="mb-4">참가자들이 행사 현장에서 1~2시간 동안 수행할 직무 과제를 직접 출제합니다.</p>
+                <ul>
+                    <li class="mb-2"><strong>역량 즉시 검증</strong>: 귀사의 글로벌 마케팅 플랜, 현지화 아이디어 등 실무와 직접 연동되는 주제 출제</li>
+                    <li class="mb-2"><strong>우수 과제 혜택</strong>: 실제 결과물에 대한 지식재산 피드백 및 우수 참가자 최우선 오퍼 기회 제공</li>
+                </ul>
+            </div>
+
+            <div id="track-mentor" class="tab-content">
+                <h3 class="mb-2">Track 03. 심사위원 및 전문 멘토</h3>
+                <p class="mb-4">스타트업 대표, VC 및 글로벌 HR 담당자가 참여하여 참가자들의 기획을 평가하고 성장을 지원합니다.</p>
+                <ul>
+                    <li class="mb-2"><strong>심사 참여</strong>: 행사 최종 발표(피칭 세션)의 현장 심사위원으로 위촉</li>
+                    <li class="mb-2"><strong>커리어 멘토링</strong>: 구직자와의 1:1 직무 멘토링 및 라운드테이블 참가를 통해 자사 채용 브랜딩 구축</li>
+                </ul>
+            </div>
+
+            <div id="track-branding" class="tab-content">
+                <h3 class="mb-2">Track 04. 시상 및 브랜드 스폰서</h3>
+                <p class="mb-4">글로벌 인재들에게 브랜드를 알리고 소통할 수 있는 브랜드 파트너십입니다.</p>
+                <ul>
+                    <li class="mb-2"><strong>브랜드 노출</strong>: 행사 공식 키비주얼, 웹페이지 내 기업 로고 대대적 노출</li>
+                    <li class="mb-2"><strong>서비스 연계</strong>: 자사 제품 또는 서비스 이용권 등을 수상자 리워드로 제공하여 체험 기회 제공</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 3: Benefits -->
+        <section>
+            <span class="section-num">03. Corporate Benefits</span>
+            <h2 class="section-title">파트너 기업 혜택</h2>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-num">I.</div>
+                    <div class="benefit-title">비자 매칭 시스템</div>
+                    <div class="benefit-desc">외국인 채용의 가장 큰 장벽인 비자 취득 여부를 사전에 완전 검토하여 채용 확정 후의 불확실성을 예방합니다.</div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-num">II.</div>
+                    <div class="benefit-title">시간 및 비용 단축</div>
+                    <div class="benefit-desc">포트폴리오 심사와 현장 실무 과제, 그리고 1:1 심층 면접까지 단 이틀의 행사 기간 동안 원스톱으로 처리합니다.</div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-num">III.</div>
+                    <div class="benefit-title">채용 중개 비용 0원</div>
+                    <div class="benefit-desc">서울시 글로벌 인재 유치 사업의 일환으로 진행되어 파트너 기업의 매칭 및 중개 수수료는 일체 발생하지 않습니다.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Event Timeline -->
+        <section>
+            <span class="section-num">04. Timeline</span>
+            <h2 class="section-title">추진 일정 및 절차</h2>
+
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-date">June 2026</div>
+                    <div class="timeline-title">기업 매칭 및 참여 조율</div>
+                    <p class="mb-2">참여 제안 및 트랙 확정 (채용 매칭 / 과제 출제 / 멘토 등 조율)</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">July 2026</div>
+                    <div class="timeline-title">글로벌 인재 모집 및 1차 선발</div>
+                    <p class="mb-2">국내외 우수 외국인 지원자 모집 및 1차 서류/포트폴리오 심사 (정예 30명 선발)</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">August 22 - 23, 2026</div>
+                    <div class="timeline-title">커리어 서바이벌 행사 개최 (2 Days)</div>
+                    <p class="mb-2">Day 1: 자기소개 피칭, 기업 네트워킹, 멘토링 세션</p>
+                    <p>Day 2: 실무 과제 집중 해결, 1:1 심층 매칭 인터뷰, 최종 시상식</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">September 2026</div>
+                    <div class="timeline-title">후속 채용 연계 & 비자 지원</div>
+                    <p class="mb-2">최종 합격자 오퍼 발송, 인턴십/정규직 연계 및 행정 비자 전환 지원</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Contact Info -->
+        <footer>
+            <div>
+                <strong>서울 글로벌 커리어 서바이벌 사무국</strong>
+                <p class="mb-2">Email: info@seoulglobalcareer.org (또는 엑셀 내 기업 매칭 담당자 이메일)</p>
+                <p>Tel: 02-1234-5678</p>
+            </div>
+            <div>
+                <p>© 2026 Seoul Global Career Survival. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Application Modal Form -->
+    <div id="applyModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">×</button>
+            <h2 class="serif mb-4">참여 파트너 신청</h2>
+            <p class="mb-8" style="font-size: 14px; color: var(--color-text-muted);">
+                정보를 입력해주시면 글로벌 커리어 서바이벌 사무국에서 담당자 연락 및 상세 안내자료(PDF)를 보내드립니다.
+            </p>
+
+            <form onsubmit="submitForm(event)">
+                <div class="form-group">
+                    <label class="form-label" for="comp_name">기업명</label>
+                    <input type="text" id="comp_name" class="form-control" placeholder="예: (주)글로벌테크" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="comp_contact">담당자 이름 / 직함</label>
+                    <input type="text" id="comp_contact" class="form-control" placeholder="예: 홍길동 인사팀장" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="comp_email">이메일 주소</label>
+                    <input type="email" id="comp_email" class="form-control" placeholder="example@company.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">관심 참여 트랙 (중복 선택 가능)</label>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 8px;">
+                        <label class="form-checkbox">
+                            <input type="checkbox" name="tracks" value="matching"> 채용 매칭 파트너
+                        </label>
+                        <label class="form-checkbox">
+                            <input type="checkbox" name="tracks" value="tasks"> 실무 과제 출제
+                        </label>
+                        <label class="form-checkbox">
+                            <input type="checkbox" name="tracks" value="mentor"> 심사위원 / 멘토링
+                        </label>
+                        <label class="form-checkbox">
+                            <input type="checkbox" name="tracks" value="branding"> 리워드 & 브랜드 스폰서
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-black" style="width: 100%; margin-top: 16px;">제안 신청서 제출하기</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts for Tab and Modal actions -->
+    <script>
+        function switchTab(evt, trackId) {
+            // Get all tab contents and hide them
+            const contents = document.getElementsByClassName("tab-content");
+            for (let i = 0; i < contents.length; i++) {
+                contents[i].classList.remove("active");
+            }
+
+            // Get all tab buttons and remove active class
+            const tablinks = document.getElementsByClassName("tab-btn");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+
+            // Show active tab content and add active class to clicked tab button
+            document.getElementById(trackId).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+
+        function openModal() {
+            document.getElementById("applyModal").style.display = "flex";
+        }
+
+        function closeModal() {
+            document.getElementById("applyModal").style.display = "none";
+        }
+
+        // Close modal if clicked outside content card
+        window.onclick = function (event) {
+            const modal = document.getElementById("applyModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        function submitForm(event) {
+            event.preventDefault();
+            const company = document.getElementById("comp_name").value;
+            const name = document.getElementById("comp_contact").value;
+            alert(`${company} (${name}님)의 제안 신청이 정상 접수되었습니다. 사무국에서 빠르게 이메일로 연락 드리겠습니다.`);
+            closeModal();
+        }
+    </script>
+</body>
+
+</html>
